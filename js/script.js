@@ -32,8 +32,6 @@ window.addEventListener('resize', function(event)
     }
 });
 
-
-
 var swiper = new Swiper(".slide-content", {
     slidesPerView: 3,
     spaceBetween: 25,
@@ -46,6 +44,10 @@ var swiper = new Swiper(".slide-content", {
       clickable: true,
       dynamicBullets: true,
     },
+    autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -61,5 +63,23 @@ var swiper = new Swiper(".slide-content", {
         950: {
             slidesPerView: 3,
         },
+    },
+  });
+
+  var swiper = new Swiper(".slide-content-video", {
+    slidesPerView: 1,
+    spaceBetween: 100,
+    loop: true,
+    centerSlide: 'true',
+    fade: 'true',
+    grabCursor: 'true',
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
   });
