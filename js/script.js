@@ -2,7 +2,7 @@ var header = document.getElementById('header');
 var navigation_header = document.getElementById('navigation-header');
 var main = document.getElementById('main');
 var showSidebar = false;
-
+//animação de sidebar e blur
 function activesidebar()
 {
     showSidebar = !showSidebar;
@@ -23,6 +23,18 @@ function closesidebar()
     if (showSidebar){ activesidebar()} 
 }
 
+
+//mudar o header ao sair da pagina
+document.addEventListener("visibilitychange", (event) => {
+  if (document.visibilityState === "visible") {
+    document.title = "Blog do Gabriel 🐧";
+  }else{ document.title = "Veja mais um pouco 😢"; };
+
+});
+
+
+
+//carrosel de fotos
 window.addEventListener('resize', function(event)
 {
     //caso usuario redimencione saia o blur e feche a sidebar
