@@ -160,7 +160,7 @@ body{
 
 .iniBG
 {
-    background-image: url('https://i.pinimg.com/originals/f5/54/e9/f554e96d81be7b1889168de21a0febfb.jpg');
+    background-image: url('/img/bk1.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -228,6 +228,7 @@ height: 2.5px;
 .iniciopart1 p
 {
     font-size: 1.5rem;
+    text-align: justify;
     margin: 20px 0 3rem 0;
 }
 
@@ -548,7 +549,10 @@ height: 2.5px;
 .projetos{
     color: var(--color-dark2);
     padding: 5rem 0 5rem 0;
-    background-color: var(--color-white);
+    background-image: url("/img/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 
   .videoP{
@@ -660,8 +664,10 @@ height: 2.5px;
     }
   }
 
-.btnpur{color: var(--color-purple2);}
-.btnpur:hover{color: var(--color-purple3);}
+.swiper-navBtn.btnpur { color: var(--color-purple2);}
+.swiper-navBtn.btnpur:hover{color: var(--color-purple3);}
+
+
 
 /*CONTATO*/
 .contato{
@@ -695,14 +701,19 @@ height: 2.5px;
  }
 
  .artcont{
-    width: 100%;
-    height: 100%;
+    opacity: .75;
+    width: 100vw;
+    max-width: 420px;
+    height: 100vh;
+    max-height: 450px;
  }
  .artcontmini
 {
+    box-shadow: 1px 1px 20px 1px var(--color-light);
     width: 50%;
     height: 50%;
     margin-top: 5rem;
+    border-radius: 50%;
 }
 
 .contatosvg{
@@ -762,7 +773,7 @@ height: 2.5px;
     padding: 40px 0;
   }
   .slide-content{
-    margin: 0 40px;
+    margin: 0 55px;
     overflow: hidden;
     border-radius: 25px;
   }
