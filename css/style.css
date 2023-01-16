@@ -118,7 +118,7 @@
         top: 0;
         left: 0;
         background-color: var(--color-dark2);
-        height: 100vh;
+        height: 200vh;
         width: 35vw;
         padding: 1em;
         animation-duration: 1s;
@@ -761,6 +761,10 @@ height: 2.5px;
        font-size: 10px;
     }
 
+    .artcont{
+        width: 45vw;
+        height: 45vh;
+     }
 }
 
 
