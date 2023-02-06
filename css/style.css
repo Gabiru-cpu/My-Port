@@ -561,6 +561,7 @@ height: 2.5px;
     max-width: 560px;
     height: 35vh;
     max-height: 315px;
+    min-height: 245px;
   }
 
   .slide-container-video{
