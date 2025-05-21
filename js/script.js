@@ -95,3 +95,14 @@ var swiper = new Swiper(".slide-content", {
       prevEl: ".swiper-button-prev",
     },
   });
+
+  
+
+
+  function fecharPopup() {
+    document.getElementById('popup-overlay').style.display = 'none';
+  }
+
+  window.onload = function() {
+    document.getElementById('popup-overlay').style.display = 'flex';
+  };
